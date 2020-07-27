@@ -12,12 +12,19 @@ var PUBLIC_TOKEN = null;
 var ITEM_ID = null;
 
 // Initialize the Plaid client
-var client = new plaid.Client(
-  PLAID_CLIENT_ID,
-  PLAID_SECRET,
-  PLAID_PUBLIC_KEY,
-  plaid.environments[PLAID_ENV],
-  { version: "2019-05-29", clientApp: "Plaid Quickstart" }
+// var client = new plaid.Client(
+//   PLAID_CLIENT_ID,
+//   PLAID_SECRET,
+//   PLAID_PUBLIC_KEY,
+//   plaid.environments[PLAID_ENV],
+//   { version: "2019-05-29", clientApp: "Plaid Quickstart" }
+// );
+var client = new plaid.Client({
+    clientID: PLAID_CLIENT_ID,
+    secret: PLAID_SECRET,
+    env: plaid.environments[PLAID_ENV],
+    options: { version: "2019-05-29", clientApp: "Plaid Quickstart" }
+  }
 );
 
 const receivePublicToken = (req, res) => {

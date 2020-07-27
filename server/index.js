@@ -6,6 +6,7 @@ const {
     getTransactions
     } = require("./controllers/controller");
 app.use(express.json());
+app.use(express.static(__dirname + '/../public'));
 // Get the public token and exchange it for an access token
 app.post("/auth/public_token", receivePublicToken);
 // Get Transactions

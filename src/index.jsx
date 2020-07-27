@@ -4,10 +4,14 @@ import '../public/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// console.log("React", React)
+// console.log("ReactDOM", ReactDOM)
+// console.log("App", App)
+
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <App />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

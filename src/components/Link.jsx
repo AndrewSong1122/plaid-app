@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PlaidLink from "react-plaid-link";
+import {PlaidLink} from "react-plaid-link";
 import axios from "axios";
 const api = require("../../config");
 
