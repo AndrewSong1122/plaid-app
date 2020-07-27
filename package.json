@@ -8,8 +8,11 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "plaid": "^6.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-plaid-link": "^2.2.3"
   },
   "scripts": {
     "react-dev": "webpack -d --watch",
